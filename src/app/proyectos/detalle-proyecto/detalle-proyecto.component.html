@@ -1,0 +1,9 @@
+<article *ngIf="elproyecto">
+  <h3>Detalle de proyecto</h3>
+  <p>Id: {{elproyecto.pid}}</p>
+  <p>Título: {{elproyecto.titulo}}</p>
+ 
+  <p>  
+    <a  [routerLink]="['/proyectos']">Atrás</a>
+  </p>
+</article>

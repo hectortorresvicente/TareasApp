@@ -1,0 +1,11 @@
+<section>
+  <h3>Nuevo proyecto</h3>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
+      <label for="title">Título:</label>
+      <input type="text" [(ngModel)]="newProject.titulo" name="titulo" id="title" minlength="3" required>
+    </div>
+    <div><button [disabled]="!myForm.valid">Guardar</button></div>
+  </form>
+  {{newProject|json}}
+</section>
